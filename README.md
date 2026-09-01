@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Building practical web and mobile software that turns complex workflows into clear, dependable products.
+  Building thoughtful software products that turn complex workflows into clear, dependable experiences.
 </p>
 
 ## Projects
