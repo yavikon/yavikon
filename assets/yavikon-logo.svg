@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1160"
+     width="1000"
+     height="1160"
+     role="img"
+     aria-labelledby="title desc"
+     shape-rendering="geometricPrecision">
+  <title id="title">Yavikon precision YVK logo</title>
+  <desc id="desc">A geometric Yavikon monogram and wordmark with one icon stroke width, one icon clearance, and shared 45-degree diagonals.</desc>
+
+  <metadata>
+    Icon geometry:
+    W = 60 user units (all icon structural strokes and bar thicknesses)
+    G = 20 user units (all icon clearances)
+    Diagonal angle = 45 degrees
+    Circle centre = (500, 500)
+    Circle centreline radius = 360
+    Circle outer clipping radius = 390 (= 360 + W/2)
+    V/Y centre = x 350; K centre = x 650; combined centre = x 500
+    V flat base = 60 units; Y stem = 60 units
+    V right vertical terminal to K stem = 20 units
+    Wordmark visual cap height = approximately 107 user units
+    Wordmark visual width = approximately 783 user units
+    Wordmark is optically kerned and centred at x 500
+  </metadata>
+
+  <defs>
+    <style>
+      .navy-stroke {
+        fill: none;
+        stroke: #071956;
+        stroke-width: 60;
+        stroke-linecap: butt;
+        stroke-linejoin: miter;
+      }
+      .navy-fill { fill: #071956; }
+      .indigo-stroke {
+        fill: none;
+        stroke: #4338ff;
+        stroke-width: 60;
+        stroke-linecap: round;
+      }
+    </style>
+
+    <!-- Every outward monogram terminal is clipped to the ring's outer contour. -->
+    <clipPath id="outer-circle" clipPathUnits="userSpaceOnUse">
+      <circle cx="500" cy="500" r="390"/>
+    </clipPath>
+
+    <!--
+      Ring clearance is cut with W + 2G = 100.
+      The corresponding visible path is W = 60, therefore the clear edge gap is G = 20.
+    -->
+    <mask id="ring-clearance" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000">
+      <rect width="1000" height="1000" fill="white"/>
+
+      <g fill="none"
+         stroke="black"
+         stroke-width="100"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         clip-path="url(#outer-circle)">
+        <!-- V left arm centreline; visible perpendicular thickness is W. -->
+        <path d="M -100 92.574 L 350 542.574"/>
+
+        <!-- Y stem. -->
+        <path d="M 350 575 L 350 980"/>
+
+        <!-- K stem and 45-degree arms. -->
+        <path d="M 650 250.147 L 650 980"/>
+        <path d="M 650 500.147 L 1000 150.147"/>
+        <path d="M 650 500.147 L 1000 850.147"/>
+      </g>
+
+      <!-- Power/I clearance follows the same W + 2G rule. -->
+      <path d="M 500 72 L 500 222"
+            fill="none"
+            stroke="black"
+            stroke-width="100"
+            stroke-linecap="round"/>
+    </mask>
+  </defs>
+
+  <!-- Segmented O / power ring: W = 60. -->
+  <circle cx="500" cy="500" r="360"
+          class="navy-stroke"
+          mask="url(#ring-clearance)"/>
+
+  <!-- Precision monogram clipped to the exact outer circumference. -->
+  <g clip-path="url(#outer-circle)">
+    <!--
+      Custom V outline:
+      - both arms are exactly W = 60 perpendicular to their 45-degree axes;
+      - flat bottom is exactly W = 60 wide;
+      - right terminal is vertically clipped at x = 600;
+      - K begins at x = 620 (its visible left edge), leaving exactly G = 20.
+    -->
+    <path class="navy-fill"
+          d="M -50 185
+             L 320 555
+             L 380 555
+             L 600 335
+             L 600 250.147
+             L 350 500.147
+             L -50 100.147
+             Z"/>
+
+    <!-- Flat V/Y clearance: V ends at y=555; Y begins at y=575; G = 20. -->
+    <path d="M 350 575 L 350 980" class="navy-stroke"/>
+
+    <!-- K is moved left; V/Y and K centres average to the O centre at x=500. -->
+    <path d="M 650 250.147 L 650 980" class="navy-stroke"/>
+    <path d="M 650 500.147 L 1000 150.147" class="navy-stroke"/>
+    <path d="M 650 500.147 L 1000 850.147" class="navy-stroke"/>
+  </g>
+
+  <!-- Indigo power/I mark: same icon width W = 60. -->
+  <path d="M 500 72 L 500 222" class="indigo-stroke"/>
+
+  <!--
+    Professional geometric-sans wordmark.
+    Letter outlines and spacing are optically balanced rather than mechanically equal.
+    The lower/wider proportion matches the preferred original direction.
+    All glyphs are embedded vector paths; no external font is required.
+  -->
+  <g aria-label="YAVIKON" transform="translate(42 929.3) scale(1.65 1.4)" fill="#071956">
+    <!-- Y -->
+    <path d="M 64.6 115 H 78.3 V 87.7 L 102.6 41.1 H 87.8 L 71.4 75.1 L 55.1 41.1 H 40.3 L 64.6 87.7 Z"/>
+
+    <!-- Crossbarless A -->
+    <path d="M 103 115 L 133.8 41.1 Q 139.2 38.8 144.6 41.1 L 175.6 115 H 160.5 L 139.2 61 L 118.1 115 Z"/>
+
+    <!-- V -->
+    <path d="M 206.6 115 H 217.8 L 246.4 41.1 H 232 L 212.1 97.3 L 192.2 41.1 H 177.8 Z"/>
+
+    <!-- I -->
+    <path d="M 261.6 115 H 275.3 V 41.1 H 261.6 Z"/>
+
+    <!-- K -->
+    <path d="M 297.6 115 H 311.3 V 82.5 L 334.2 115 H 350.7 L 322.9 77.4 L 350.7 41.1 H 334.2 L 311.3 73 V 41.1 H 297.6 Z"/>
+
+    <!-- O remains optically circular after the lower wordmark proportion is applied. -->
+    <path fill="#4338ff"
+          transform="translate(398 0) scale(0.848484848 1) translate(-398 0)"
+          d="M 398.2 39.8 C 376.2 39.8 359.2 56.5 359.2 78.1 C 359.2 99.5 376.4 116.3 398.1 116.3 C 419.6 116.3 436.2 99.6 436.2 78.1 C 436.2 56.8 419.3 39.8 398.2 39.8 Z M 398 53 C 411.7 53 422.4 64 422.4 78.2 C 422.4 92.5 412 103.1 398 103.1 C 384 103.1 373 92.1 373 78.1 C 373 63.8 383.8 53 398 53 Z"/>
+
+    <!-- N -->
+    <path d="M 455 115 H 468.7 V 61.3 L 499.6 115 H 514.9 V 41.1 H 501.2 V 94.9 L 470.6 41.1 H 455 Z"/>
+  </g>
+</svg>

@@ -1,16 +1,15 @@
-## Hi there 👋
+<p align="center">
+  <img src="./assets/yavikon-logo.svg" alt="Yavikon" width="320">
+</p>
 
-<!--
-**yavikon/yavikon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  Building practical web and mobile software that turns complex workflows into clear, dependable products.
+</p>
 
-Here are some ideas to get you started:
+## Projects
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Yavikon Academy
+
+A web and mobile platform for managing schools, tutors, students, schedules, attendance, lesson packages, and payments.
+
+**Technology:** .NET · ASP.NET Core · Blazor · .NET MAUI
