@@ -12,4 +12,4 @@
 
 A web and mobile platform for managing schools, tutors, students, schedules, attendance, lesson packages, and payments.
 
-**Initial stack**: .NET · ASP.NET Core · Blazor · .NET MAUI
+**Initial stack:** .NET · ASP.NET Core · Blazor · .NET MAUI
